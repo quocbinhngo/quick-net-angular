@@ -1,0 +1,13 @@
+<div class="w-80 h-full border-r-[0.5px] border-gray-900 p-8">
+  <div class="flex justify-between items-center mb-4">
+    <h2 class="text-3xl font-semibold">Messages</h2>
+    <fa-icon class="text-2xl" [icon]="faPenToSquare"></fa-icon>
+  </div>
+
+  <div class="flex gap-4 flex-col">
+    <div *ngFor="let conversation of conversations">
+      <app-conversation-item [conversation]="conversation">
+      </app-conversation-item>
+    </div>
+  </div>
+</div>

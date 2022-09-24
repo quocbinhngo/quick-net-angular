@@ -1,0 +1,28 @@
+<div class="w-96">
+  <h3 class="mb-4 text-2xl font-semibold">Don't have an account?</h3>
+  <form (ngSubmit)="onSignupFormSubmit()">
+    <div class="flex flex-col gap-3 mb-4">
+      <app-form-section
+        label="Email"
+        [control]="this.emailFormControl"
+      ></app-form-section>
+      <app-form-section
+        label="First name"
+        [control]="this.firstNameFormControl"
+      ></app-form-section>
+      <app-form-section
+        label="Last name"
+        [control]="this.lastNameFormControl"
+      ></app-form-section>
+      <app-form-section
+        label="Password"
+        [control]="this.passwordFormControl"
+      ></app-form-section>
+      <app-form-section
+        label="Confirm password"
+        [control]="this.confirmPasswordFormControl"
+      ></app-form-section>
+    </div>
+    <app-button>Sign up</app-button>
+  </form>
+</div>
