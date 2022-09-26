@@ -22,7 +22,7 @@ export class SignupFormComponent implements OnInit {
   });
 
   onSignupFormSubmit = () => {
-    console.log(this.signupFormGroup.value);
+    
   };
 
   constructor() {}
